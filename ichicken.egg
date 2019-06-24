@@ -1,0 +1,10 @@
+((components (extension ichicken
+                        (source "chicken-repl-server/ichicken.scm"))
+             (program ichicken-server
+                      (source "chicken-repl-server/main.scm")
+                      (component-dependencies ichicken)))
+ (version 0.0.0)
+ (license "MIT")
+ (author "Carl Morris")
+ (synopsis "Kernel for running Chicken in Jupyter notebooks.")
+ )

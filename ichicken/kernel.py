@@ -25,7 +25,7 @@ class IChickenKernel(Kernel):
         super().__init__(**kwargs)
         self._chicken_server_thread = Thread(
             target=sp.call,
-            args=(['bash', '-c', 'bin/start-chicken-repl-server'],)
+            args=(['bash', '-c', 'ichicken-server'],)
         )
         self._chicken_server_thread.start()
         logging.info('Chicken thread started {}.'.format(
