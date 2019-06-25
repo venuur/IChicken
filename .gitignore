@@ -102,3 +102,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Chicken build artifacts
+*.build.sh
+*.import.scm
+*.install.sh
+*.link
+*.static.o
+
+# PyCharm project information
+.idea/
+
+# Executables
+ichicken-server
